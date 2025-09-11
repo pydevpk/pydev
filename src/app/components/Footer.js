@@ -19,8 +19,8 @@ export default function Footer() {
 
             {/* Name */}
             {/* <h2 className="text-xl font-semibold text-gray-800">Pradeep K Yadav</h2> */}
-            <div className="mx-auto">
-                <Image src={PradeepLogo.src} width={150} height={150} alt="Pradeep Logo"></Image>
+            <div>
+                <Image src={PradeepLogo.src} width={150} height={150} alt="Pradeep Logo" className="mx-auto"></Image>
             </div>
 
             {/* Designation */}
