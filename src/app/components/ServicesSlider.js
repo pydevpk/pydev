@@ -13,9 +13,9 @@ const services = [
         title: "AI & Data Solutions",
         index: "01",
         services: [
-            "Unmatched Precision in Every Build",
-            "Innovative AI & Data Solutions",
-            "Future-Ready Digital Transformation"
+            "Transforming Data Into Intelligent Decisions",
+            "AI That Drives Real Business Impact",
+            "Smarter Systems, Faster Outcomes"
         ],
     },
     {
@@ -23,19 +23,19 @@ const services = [
         title: "Full-Stack Development",
         index: "02",
         services: [
-            "Unmatched Precision in Every Build",
-            "Innovative AI & Data Solutions",
-            "Future-Ready Digital Transformation"
+            "Scalable Applications, Seamless Experiences",
+            "From Concept to Code, All-in-One Development",
+            "High-Performance Builds for Modern Businesses"
         ],
     },
     {
         icon: <FaNetworkWired className="text-white" size={40} />,
-        title: "Workflow & Business Automation",
+        title: "Business Workflow & Automation",
         index: "03",
         services: [
-            "Unmatched Precision in Every Build",
-            "Innovative AI & Data Solutions",
-            "Future-Ready Digital Transformation"
+            "Eliminating Inefficiencies Through Smart Automation",
+            "AI-Powered Workflows That Save Time & Cost",
+            "Streamlined Operations for Maximum Productivity"
         ],
     },
     {
@@ -43,9 +43,9 @@ const services = [
         title: "Cloud & DevOps",
         index: "04",
         services: [
-            "Unmatched Precision in Every Build",
-            "Innovative AI & Data Solutions",
-            "Future-Ready Digital Transformation"
+            "Cloud-Native Infrastructure, Built to Scale",
+            "Secure, Automated, and Optimized Deployments",
+            "Reliability & Speed Through Modern DevOps"
         ],
     },
 ];

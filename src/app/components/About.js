@@ -18,10 +18,16 @@ export default function About() {
 
                     <div className="basis-3/4 px-4 py-10">
                         <h1 className="text-4xl font-semibold flex-1">
-                            Behind every great design is an even greater story
+                            Every software tells the story of its engineers
                         </h1>
                         <p className="mt-10">
-                            Every design has a starting point, and for truly impactful visuals. It's the narrative that guides the creative process, ensuring the final product resonates with meaning and purpose. We believe that understanding the story is paramount.
+                            I am AI/ML and Full-Stack Engineer with 5 years of experience in building intelligent,
+scalable, and cloud-native applications. Proven expertise in designing and
+deploying machine learning and AI models, backend and frontend
+development, and cloud infrastructure. Skilled in end-to-end automation,
+microservices architecture, API development, CI/CD pipelines, containerization,
+and system security. Adept at solving real-world business challenges through AI
+integration, workflow automation, and high-performance backend systems.
                         </p>
                     </div>
                 </div>

@@ -22,8 +22,8 @@ export default function Header() {
                     <SocialLinks />
                 </div>
                 <div className="mt-10 flex gap-4 justify-center">
-                    <Button text={'Contact Me'} />
-                    <Button text={'View my Works'} />
+                    <Button text={'Contact Me'} area={"contact"} />
+                    <Button text={'View my Works'} area={"projects"} />
                 </div>
             </div>
         </header>

@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import ProfileImage from "../../../public/profile.jpeg"
+import PradeepLogo from "../../../public/Pradeep.png"
 import SocialLinks from "./SocialLinks";
 
 export default function Footer() {
@@ -17,7 +18,10 @@ export default function Footer() {
             />
 
             {/* Name */}
-            <h2 className="text-xl font-semibold text-gray-800">Pradeep K Yadav</h2>
+            {/* <h2 className="text-xl font-semibold text-gray-800">Pradeep K Yadav</h2> */}
+            <div className="mx-auto">
+                <Image src={PradeepLogo.src} width={150} height={150} alt="Pradeep Logo"></Image>
+            </div>
 
             {/* Designation */}
             <p className="text-gray-500 mb-4">Sr Full Stack Engineer | AI Engineer | Backend Specialist</p>

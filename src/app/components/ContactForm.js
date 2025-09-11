@@ -9,18 +9,31 @@ export default function ContactForm() {
         message: "",
     });
 
+    const [loading, setLoading] = useState(false);
+
     const handleChange = (e) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        console.log("Form submitted:", formData);
-        // TODO: connect to API, backend, or email service
+        setLoading(true); // 🔹 disable form before request
+        const res = await fetch("/api/contact", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(formData),
+        });
+
+        const data = await res.json();
+        alert(JSON.stringify(data?.message));
+        setLoading(false); // 🔹 enable form after response
+        if (data.success) {
+            setFormData({ name: "", email: "", message: "" });
+        }
     };
 
     return (
-        <div className="border-left-main border-right-main max-w-4xl mx-auto p-15 relative">
+        <section id="contact" className="border-left-main border-right-main max-w-4xl mx-auto p-15 relative">
             <span className="right-top w-2 h-2 block"></span>
             <span className="right-bottom w-2 h-2 block"></span>
             <span className="left-top w-2 h-2 block"></span>
@@ -88,12 +101,13 @@ export default function ContactForm() {
                         <button
                             type="submit"
                             className="w-50 border border-gray-300 text-white py-2 rounded-lg hover:border-gray-600 transition"
+                            disabled={loading}
                         >
-                            Send Message
+                            {loading ? "Sending..." : "Send Message"}
                         </button>
                     </div>
                 </form>
             </div>
-        </div>
+        </section>
     );
 }

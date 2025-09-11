@@ -6,7 +6,6 @@ export default function TechCard({ logo, name, description }) {
         {logo}
       </div>
       <h3 className="text-lg font-semibold mb-2">{name}</h3>
-      <p className="text-sm text-gray-400">{description}</p>
     </div>
   );
 }

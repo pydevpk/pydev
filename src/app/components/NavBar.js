@@ -1,5 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
+import Image from "next/image";
+import PradeepLogo from "../../../public/Pradeep.png"
 
 export default function Navbar() {
     const [time, setTime] = useState("");
@@ -26,7 +28,9 @@ export default function Navbar() {
         <nav className="bg-black text-white max-w-4xl mx-auto shadow-md border-left-main border-right-main p-10">
             <div className="flex justify-between items-center">
 
-                <div className="hidden md:block text-2xl font-bold">Pradeep</div>
+                <div className="hidden md:block">
+                    <Image src={PradeepLogo.src} width={150} height={150} alt="Pradeep Logo"></Image>
+                </div>
 
                 <div className="hidden md:block text-sm text-green-400">
                     ● Available

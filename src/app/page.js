@@ -19,7 +19,7 @@ export default function Home() {
       <div className="border-bottom-main border-gray-300 relative">
         <Header />
       </div>
-      <div className="border-bottom-main border-gray-300">
+      <div className="border-bottom-main border-gray-300 relative">
         <Projects />
       </div>
       <div className="border-bottom-main border-gray-300">
