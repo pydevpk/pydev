@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #0c0301;
+  --foreground: #ededed;
 }
 
 @theme inline {
@@ -23,4 +23,60 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.rajdhani{
+  font-family: Rajdhani;
+}
+
+.playgroud{
+  background: rgba(17, 17, 17, 0.0666666667);
+    box-shadow: 0px 4px 20px 0px rgba(103, 103, 103, 0.2509803922) inset;
+    border-radius: 24px;
+}
+
+.playgroud2{
+  background: rgba(58, 45, 45, 0.067);
+    box-shadow: 0px 4px 20px 0px rgba(199, 22, 22, 0.251) inset;
+    border-radius: 24px;
+}
+
+.border-left-main{
+  border-left: 0.1px solid rgb(43, 39, 39);
+}
+
+.border-right-main{
+  border-right: 0.1px solid rgb(43, 39, 39);
+}
+
+.border-bottom-main{
+  border-bottom: 0.1px solid rgb(43, 39, 39);
+}
+
+.left-top{
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  background-color: rgb(43, 39, 39);;
+}
+
+.left-bottom{
+  position: absolute;
+  bottom: -4px;
+  left: -4px;
+  background-color: rgb(43, 39, 39);;
+}
+
+.right-top{
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  background-color: rgb(43, 39, 39);;
+}
+
+.right-bottom{
+  position: absolute;
+  bottom: -4px;
+  right: -4px;
+  background-color: rgb(43, 39, 39);;
 }
