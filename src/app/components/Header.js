@@ -14,7 +14,7 @@ export default function Header() {
                 <img
                     src={ProfileImage.src}
                     alt="Profile"
-                    className="rounded m-auto sm:w-32 sm:h-32 md:w-40 md:h-40 lg:w-100 lg:h-100 border-4 border-gray-500"
+                    className="rounded m-auto w-80 h-80 sm:w-32 sm:h-32 md:w-40 md:h-40 lg:w-100 lg:h-100 border-4 border-gray-500"
                 />
                 <h1 className="text-5xl font-bold mt-5">Pradeep Kumar Yadav</h1>
                 <p className="text-lg mt-4">Sr Full Stack Engineer | AI Engineer | Backend Specialist</p>

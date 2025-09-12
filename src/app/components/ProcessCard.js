@@ -11,7 +11,7 @@ export default function ProcessCard({ number, title, desc }) {
                     </span>
                 </div>
                 <div className="wrap">
-                    <h1 className="text-5xl font-bold text-white-800 mb-4">{title}</h1>
+                    <h1 className="text-4xl lg:text-5xl font-bold text-white-800 mb-4">{title}</h1>
                     <p>{desc}</p>
                 </div>
             </div>

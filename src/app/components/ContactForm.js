@@ -33,12 +33,12 @@ export default function ContactForm() {
     };
 
     return (
-        <section id="contact" className="border-left-main border-right-main max-w-4xl mx-auto p-15 relative">
+        <section id="contact" className="border-left-main border-right-main max-w-4xl mx-auto p-5 lg:p-15 relative">
             <span className="right-top w-2 h-2 block"></span>
             <span className="right-bottom w-2 h-2 block"></span>
             <span className="left-top w-2 h-2 block"></span>
             <span className="left-bottom w-2 h-2 block"></span>
-            <div className="w-full playgroud rounded-2xl p-20">
+            <div className="w-full playgroud rounded-2xl p-5 lg:p-20">
                 <div className="flex items-center gap-2">
                     <span className="w-1 h-1 rounded-full bg-gray-400" />
                     <p>Contact Me</p>

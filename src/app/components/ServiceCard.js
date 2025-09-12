@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function ServiceCard({ icon, title, index, services }) {
     return (
-        <div className="bg-neutral-900 max-w-3xl mx-auto rounded-2xl p-20 text-white shadow-lg min-h-[400px] flex flex-col justify-between">
+        <div className="bg-neutral-900 max-w-3xl mx-auto rounded-2xl p-5 lg:p-20 text-white shadow-lg min-h-[400px] flex flex-col justify-between">
             <div className="text-end">
                 <span className="text-gray-500 text-sm">({index})</span>
             </div>
@@ -12,10 +12,10 @@ export default function ServiceCard({ icon, title, index, services }) {
             </div>
             {/* Header */}
             <div className="flex items-center gap-4">
-                <div className="w-20 h-20 flex items-center justify-center rounded-xl bg-gradient-to-tr from-orange-500 to-red-600">
+                <div className="w-12 h-12 lg:w-20 lg:h-20 flex items-center justify-center rounded-xl bg-gradient-to-tr from-orange-500 to-red-600">
                     {icon}
                 </div>
-                <h2 className="text-5xl font-semibold flex-1">
+                <h2 className="text-xl lg:text-5xl font-semibold flex-1">
                     {title}
                 </h2>
             </div>

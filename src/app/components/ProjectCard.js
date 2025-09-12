@@ -4,14 +4,14 @@ export default function ProjectCard({ image, category, title, link = null }) {
   return (
     <div className="relative w-full rounded-xl bg-black mb-3">
       {/* Project Image */}
-      <img src={image} alt={title} className="w-full rounded-xl h-150 object-cover" />
+      <img src={image} alt={title} className="w-full rounded-xl h-60 lg:h-150 object-cover" />
 
       {/* Overlay */}
-      <div className="absolute absolute bottom-0 left-0 right-0 flex items-end justify-between p-5">
+      <div className="absolute bottom-0 left-0 right-0 flex items-end justify-between p-5">
         {/* Info */}
         <div className="text-white rounded-xl border border-white/20 bg-black/50 text-white transition hover:bg-white/15 hover:-translate-y-1 w-full p-5">
           <p className="text-sm opacity-70 ">{category}</p>
-          <h2 className="text-2xl font-semibold">{title}</h2>
+          <h2 className="text-l lg:text-2xl font-semibold">{title}</h2>
           {
             link ? (
                 <span className="inline-block mt-2 rounded-full bg-white/10 px-3 py-1 text-xs">

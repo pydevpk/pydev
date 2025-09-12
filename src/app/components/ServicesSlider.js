@@ -52,7 +52,7 @@ const services = [
 
 export default function ServicesSlider() {
     return (
-        <section className="border-left-main border-right-main max-w-4xl mx-auto p-15 relative">
+        <section className="border-left-main border-right-main max-w-4xl mx-auto p-5 lg:p-15 relative">
             <span className="right-top w-2 h-2 block"></span>
             <span className="right-bottom w-2 h-2 block"></span>
             <span className="left-top w-2 h-2 block"></span>

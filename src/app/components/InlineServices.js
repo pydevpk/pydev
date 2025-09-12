@@ -63,17 +63,28 @@ export default function InlineService() {
       <Swiper
         modules={[Navigation, Autoplay]}
         spaceBetween={40}
-        slidesPerView={3} // <-- number of cards visible at once
-        loop={true} // <-- infinite loop
+        // slidesPerView={3}
+        loop={true}
         navigation={{
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
         }}
         autoplay={{
-          delay: 2000, // <-- auto scroll every 2s
-          disableOnInteraction: false, // <-- keep autoplay after manual swipe
+          delay: 2000,
+          disableOnInteraction: false,
         }}
-        speed={1000} // <-- smooth transition speed
+        speed={1000}
+        breakpoints={{
+          640: { // ≥ 640px (sm in Tailwind)
+            slidesPerView: 1,
+          },
+          768: { // ≥ 768px (md in Tailwind)
+            slidesPerView: 2,
+          },
+          1024: { // ≥ 1024px (lg in Tailwind)
+            slidesPerView: 3,
+          },
+        }}
       >
         {cards.map((title, index) => (
           <SwiperSlide key={index+1}>

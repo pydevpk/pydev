@@ -7,7 +7,7 @@ import SocialLinks from "./SocialLinks";
 
 export default function Footer() {
     return (
-        <div className="border-left-main border-right-main max-w-4xl mx-auto p-15 text-center">
+        <div className="border-left-main border-right-main max-w-4xl mx-auto p-5 lg:p-15 text-center">
             {/* Profile Image */}
             <Image
                 src={ProfileImage.src}
