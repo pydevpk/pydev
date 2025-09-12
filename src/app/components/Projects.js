@@ -1,10 +1,11 @@
 import ProjectCard from "./ProjectCard";
-import Work4Image from "../../../public/project/works-4.jpg"
-import Forecasting from "../../../public/project/forecasting.webp"
-import VisualSearch from "../../../public/project/visual-search.avif"
-import Financial from "../../../public/project/financial.webp"
-import SurveillanceCamera from "../../../public/project/Surveillance-Camera.jpg"
-import Kroolo from "../../../public/project/Top_Generative_AI_Tools.avif"
+
+import recommendationSystemImg from "../../../public/project/AI-Recommendation-jewelry.png"
+import Forecasting from "../../../public/project/ai-forecasting.png"
+import VisualSearch from "../../../public/project/ai-visual-search.png"
+import Financial from "../../../public/project/ai-finanticx.png"
+import SurveillanceCamera from "../../../public/project/ai-surveillance.png"
+import Kroolo from "../../../public/project/ai-kroolo.png"
 
 export default function Projects() {
     return (
@@ -18,7 +19,7 @@ export default function Projects() {
                 <p>Projects</p>
             </div>
             <ProjectCard
-                image={Work4Image.src}
+                image={recommendationSystemImg.src}
                 category="AI & Data Solutions"
                 title="Jewelry Recommendation System"
                 link="https://www.ashidiamonds.com/"
@@ -39,7 +40,7 @@ export default function Projects() {
                 image={Financial.src}
                 category="AI & Data Solutions"
                 title="Finanticx – AI-Driven Financial Platform"
-                link="https://www.ashidiamonds.com/"
+                link="https://www.linkedin.com/in/vijaybabu-nakkonda-a5a81465/"
             />
             <ProjectCard
                 image={Kroolo.src}

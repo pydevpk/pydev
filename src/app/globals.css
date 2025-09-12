@@ -85,6 +85,14 @@ body {
   background-color: #080201;
 }
 
+.swiper-pagination-bullet {
+  background-color: #ffffff !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #3b82f6 !important;
+}
+
 @media (max-width: 640px) {
   .right-top {
     right: 0px;

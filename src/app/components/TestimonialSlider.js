@@ -16,13 +16,15 @@ const testimonials = [
         name: "Vijaybabu Nakkonda",
         role: "Solution Architect at Nakkonda Technology",
         text: "Pradeep is a great Python Developer. He understands user requirements and do the best to implement within agreed timelines. He is good at Python website backend development with LLM and AI.",
-        avatar: VijayImage.src
+        avatar: VijayImage.src,
+        "linkedIn": "https://www.linkedin.com/in/vijaybabu-nakkonda-a5a81465/"
     },
     {
         name: "Mostafa Qawaqzeh",
         role: "Founder at IshareIt",
         text: "I had the absolute pleasure of working with Pradeep on a challenging project, and I could not recommend him highly enough. He was the star of our team, excelling not only as a developer but also as a key contributor to the strategy planning for software development life cycle. Pradeep’s technical skills, combined with his ability to deeply understand project requirements, made him an irreplaceable part of the team...",
-        avatar: MostafaImage.src
+        avatar: MostafaImage.src,
+        "linkedIn": "https://www.linkedin.com/in/mostafa-qawaqzeh/"
     },
 ];
 
@@ -35,7 +37,6 @@ export default function TestimonialSlider() {
             <span className="left-bottom w-2 h-2 block"></span>
             <Swiper
                 modules={[Navigation, Pagination]}
-                navigation
                 pagination={{ clickable: true }}
                 spaceBetween={30}
                 slidesPerView={1}
