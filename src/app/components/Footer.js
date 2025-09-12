@@ -30,23 +30,23 @@ export default function Footer() {
             <marquee className="text-white-600 font-medium">
                 <div className="flex">
                     <div className="flex items-center gap-2">
-                        <p className="text-6xl">Book A Call</p>
+                        <p className="text-6xl">Want A Call</p>
                     </div>
                     <div className="flex items-center gap-2 ml-3">
                         <span className="w-6 h-6 rounded-full bg-gray-400" />
-                        <p className="text-6xl">Book A Call</p>
+                        <p className="text-6xl">Want A Call</p>
                     </div>
                     <div className="flex items-center gap-2 ml-3">
                         <span className="w-6 h-6 rounded-full bg-gray-400" />
-                        <p className="text-6xl">Book A Call</p>
+                        <p className="text-6xl">Want A Call</p>
                     </div>
                     <div className="flex items-center gap-2 ml-3">
                         <span className="w-6 h-6 rounded-full bg-gray-400" />
-                        <p className="text-6xl">Book A Call</p>
+                        <p className="text-6xl">Want A Call</p>
                     </div>
                     <div className="flex items-center gap-2 ml-3">
                         <span className="w-6 h-6 rounded-full bg-gray-400" />
-                        <p className="text-6xl">Book A Call</p>
+                        <p className="text-6xl">Want A Call</p>
                     </div>
                 </div>
             </marquee>

@@ -1,6 +1,7 @@
-"use client"; // if you are using Next.js App Router
+"use client";
 
 import { useState } from "react";
+import ContactInfo from "./ContactInfo";
 
 export default function ContactForm() {
     const [formData, setFormData] = useState({
@@ -107,6 +108,15 @@ export default function ContactForm() {
                         </button>
                     </div>
                 </form>
+                <div className="relative w-full mt-10">
+                    <hr className="border-t border-gray-300" />
+                    <div className="absolute inset-0 flex items-center justify-center">
+                        <span className="px-3 text-white-600 contact-or">Or</span>
+                    </div>
+                </div>
+                <div className="pt-5 lg:pt-10">
+                    <ContactInfo />
+                </div>
             </div>
         </section>
     );

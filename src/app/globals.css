@@ -25,91 +25,80 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.rajdhani{
+.rajdhani {
   font-family: Rajdhani;
 }
 
-.playgroud{
+.playgroud {
   background: rgba(17, 17, 17, 0.0666666667);
-    box-shadow: 0px 4px 20px 0px rgba(103, 103, 103, 0.2509803922) inset;
-    border-radius: 24px;
+  box-shadow: 0px 4px 20px 0px rgba(103, 103, 103, 0.2509803922) inset;
+  border-radius: 24px;
 }
 
-.playgroud2{
+.playgroud2 {
   background: rgba(58, 45, 45, 0.067);
-    box-shadow: 0px 4px 20px 0px rgba(199, 22, 22, 0.251) inset;
-    border-radius: 24px;
+  box-shadow: 0px 4px 20px 0px rgba(199, 22, 22, 0.251) inset;
+  border-radius: 24px;
 }
 
-.border-left-main{
+.border-left-main {
   border-left: 0.1px solid rgb(43, 39, 39);
 }
 
-.border-right-main{
+.border-right-main {
   border-right: 0.1px solid rgb(43, 39, 39);
 }
 
-.border-bottom-main{
+.border-bottom-main {
   border-bottom: 0.1px solid rgb(43, 39, 39);
 }
 
-.left-top{
+.left-top {
   position: absolute;
   top: -4px;
   left: -4px;
-  background-color: rgb(43, 39, 39);;
+  background-color: rgb(43, 39, 39);
 }
 
-.left-bottom{
+.left-bottom {
   position: absolute;
   bottom: -4px;
   left: -4px;
-  background-color: rgb(43, 39, 39);;
+  background-color: rgb(43, 39, 39);
 }
 
-.right-top{
+.right-top {
   position: absolute;
   top: -4px;
   right: -4px;
-  background-color: rgb(43, 39, 39);;
+  background-color: rgb(43, 39, 39);
 }
 
-.right-bottom{
+.right-bottom {
   position: absolute;
   bottom: -4px;
   right: -4px;
-  background-color: rgb(43, 39, 39);;
+  background-color: rgb(43, 39, 39);
 }
 
-.gradient-1{
-  position: absolute;
-    left: -281px;
-    top: -55px;
-    z-index: -1;
-    padding: 0 !important;
-    width: 400px;
-    height: 1000px;
-    opacity: 0.75;
+.contact-or {
+  background-color: #080201;
 }
 
-.gradient-1::before{
-  position: absolute;
-    top: 0;
-    left: 0;
-    content: "";
-    width: 400px;
-    height: 400px;
-    background-color: var(--secondary, #FB8410);
-    filter: blur(100px);
-}
+@media (max-width: 640px) {
+  .right-top {
+    right: 0px;
+  }
 
-.gradient-1::after{
-  position: absolute;
-    bottom: 0;
-    left: 0;
-    content: "";
-    width: 400px;
-    height: 400px;
-    background-color: var(--primary);
-    filter: blur(200px);
+  .right-bottom {
+    right: 0px;
+  }
+
+  .left-top {
+    left: 0px;
+  }
+
+  .left-bottom {
+    left: 0px;
+  }
 }

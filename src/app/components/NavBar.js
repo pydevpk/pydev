@@ -25,7 +25,7 @@ export default function Navbar() {
         return () => clearInterval(interval);
     }, []);
     return (
-        <nav className="bg-black text-white max-w-4xl mx-auto shadow-md border-left-main border-right-main p-10">
+        <nav className="bg-black text-white max-w-4xl mx-auto shadow-md border-left-main border-right-main p-5 lg:p-10">
             <div className="flex justify-between items-center">
 
                 <div className="hidden md:block">
