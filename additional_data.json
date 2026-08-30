@@ -1,0 +1,419 @@
+{
+  "data": {
+    "personal": {
+      "name": "Pradeep Kumar Yadav",
+      "title": "Sr Full Stack Engineer | AI Engineer",
+      "phone": "+91 830 243 2383",
+      "email": "pydev.pk@gmail.com",
+      "location": "Jaipur, India",
+      "portfolio": "Portfolio"
+    },
+
+    "profile": {
+      "summary": "AI/ML and Full-Stack Engineer with 5 years of experience in building intelligent, scalable, and cloud-native applications. Proven expertise in designing and deploying machine learning and AI models, backend and frontend development, and cloud infrastructure. Skilled in end-to-end automation, microservices architecture, API development, CI/CD pipelines, containerization, and system security. Adept at solving real-world business challenges through AI integration, workflow automation, and high-performance backend systems."
+    },
+
+    "skills": {
+      "programmingLanguages": [
+        "Python",
+        "JavaScript",
+        "SQL",
+        "HTML",
+        "CSS"
+      ],
+
+      "backend": [
+        "Django",
+        "Flask",
+        "FastAPI",
+        "aiohttp",
+        "Node.js",
+        "API Development",
+        "Microservices",
+        "WebSockets"
+      ],
+
+      "frontend": [
+        "Next.js",
+        "React.js",
+        "JavaScript",
+        "HTML",
+        "CSS",
+        "jQuery"
+      ],
+
+      "dataScience": [
+        "Pandas",
+        "NumPy",
+        "Scikit-learn",
+        "Matplotlib",
+        "Seaborn",
+        "Statistics",
+        "Data Analytics"
+      ],
+
+      "machineLearning": [
+        "Machine Learning",
+        "Deep Learning",
+        "TensorFlow",
+        "Keras",
+        "PyTorch",
+        "Scikit-learn",
+        "Transformers",
+        "LLMs",
+        "NLP"
+      ],
+
+      "computerVision": [
+        "OpenCV",
+        "YOLOv8",
+        "Google Vision API",
+        "OCR",
+        "Image Classification",
+        "Object Detection",
+        "Real-time Video Processing",
+        "GPU Acceleration"
+      ],
+
+      "generativeAI": [
+        "LLMs",
+        "Transformers",
+        "LangChain",
+        "LangGraph",
+        "Amazon Bedrock",
+        "RAG",
+        "FAISS",
+        "Pinecone",
+        "Knowledge Bases"
+      ],
+
+      "databases": [
+        "PostgreSQL",
+        "MySQL",
+        "MongoDB",
+        "SQLite",
+        "Redis"
+      ],
+
+      "searchAndRetrieval": [
+        "FAISS",
+        "Pinecone",
+        "Elasticsearch",
+        "NLP",
+        "Vector Search",
+        "Vision Search"
+      ],
+
+      "aws": [
+        "AWS",
+        "AWS SageMaker",
+        "AWS EC2",
+        "AWS S3",
+        "AWS Lambda",
+        "AWS Glue",
+        "AWS CloudFormation",
+        "AWS RDS",
+        "AWS Aurora",
+        "Amazon DynamoDB",
+        "Amazon Redshift",
+        "Amazon QuickSight",
+        "Amazon VPC",
+        "Amazon Route 53",
+        "Amazon CloudFront",
+        "Amazon CloudWatch",
+        "Amazon EKS",
+        "Amazon Textract",
+        "Amazon SNS",
+        "Amazon SQS",
+        "Amazon Personalize",
+        "Amazon Bedrock"
+      ],
+
+      "gcp": [
+        "GCP",
+        "Google Vision API"
+      ],
+
+      "devops": [
+        "Kubernetes",
+        "Docker",
+        "Nginx",
+        "Gunicorn",
+        "Terraform",
+        "CI/CD",
+        "GitHub Actions",
+        "Git"
+      ],
+
+      "cloudAndInfrastructure": [
+        "Cloud Infrastructure",
+        "Cloud Deployment",
+        "Containerization",
+        "Infrastructure as Code",
+        "Microservices Architecture",
+        "CI/CD Pipelines",
+        "System Security"
+      ],
+
+      "automation": [
+        "n8n",
+        "Workflow Automation",
+        "End-to-End Automation",
+        "Automated Retraining",
+        "Automated Deployment",
+        "Scheduled Jobs"
+      ],
+
+      "architecture": [
+        "Microservices Architecture",
+        "System Design",
+        "Architectural Planning",
+        "Cloud-Native Applications",
+        "Scalable Applications",
+        "Performance Optimization",
+        "High-Performance Backend Systems"
+      ]
+    },
+
+    "experience": [
+      {
+        "company": "Contractual Work",
+        "role": "Senior AI Engineer",
+        "startDate": "Jan 2025",
+        "endDate": "Present",
+        "description": [
+          "Designing, developing and deploying AI/ML models tailored to real-world industry use cases.",
+          "Building scalable, maintainable software solutions for a diverse client base.",
+          "Integrating AI workflows into both existing and new systems across various industries to enhance automation and intelligence."
+        ]
+      },
+      {
+        "company": "Gohashinclude",
+        "role": "Tech Lead",
+        "startDate": "June 2022",
+        "endDate": "Jan 2025",
+        "description": [
+          "Led a cross-functional team of AI engineers, full-stack developers, DevOps engineers, and designers.",
+          "Spearheaded system design, architectural planning, and performance optimization for scalable applications.",
+          "Delivered end-to-end technology solutions by aligning product goals with advanced engineering practices."
+        ]
+      },
+      {
+        "company": "Segnotech",
+        "role": "Full Stack Software Developer",
+        "startDate": "Mar 2021",
+        "endDate": "May 2022",
+        "description": [
+          "Developed APIs and web applications for media and entertainment, education and healthcare domains.",
+          "Deployed applications on cloud."
+        ]
+      },
+      {
+        "company": "CDAC India",
+        "role": "Data Science Intern",
+        "startDate": "Jan 2020",
+        "endDate": "Jun 2020",
+        "description": [
+          "Worked on data analytics, statistics, and machine learning models.",
+          "Worked on chatbot projects and deep learning algorithms."
+        ]
+      }
+    ],
+
+    "education": [
+      {
+        "degree": "Bachelor of Technology",
+        "institution": "Vivekananda Global University, Jaipur",
+        "startDate": "2016",
+        "endDate": "2020"
+      }
+    ],
+
+    "projects": [
+      {
+        "name": "Jewelry Recommendation System",
+        "description": [
+          "Built a visual + metadata-based recommendation engine for jewelry products using deep learning.",
+          "Trained the model on 16,000+ products, each with multiple images and rich metadata including style, type, color and karat.",
+          "Used AWS SageMaker for model training, feature extraction, and FastAPI for endpoint deployment.",
+          "Enabled automatic retraining and deployment via periodic jobs for keeping recommendations up to date.",
+          "Optimized performance and scalability using FastAPI, S3, and Dockerized workflows.",
+          "Significantly improved customer engagement by offering intelligent, relevant suggestions.",
+          "Developed an end-to-end automation pipeline with zero manual interface."
+        ],
+        "technologies": [
+          "Deep Learning",
+          "AWS SageMaker",
+          "AWS S3",
+          "FastAPI",
+          "Docker"
+        ]
+      },
+
+      {
+        "name": "Sales and Demand Forecasting System",
+        "description": [
+          "Designed and deployed a time-series forecasting system to predict product demand and sales trends across multiple SKUs.",
+          "Integrated historical sales, promotions, seasonality, and external market trends to improve forecasting accuracy.",
+          "Built a modular data pipeline for data ingestion, preprocessing, model training, and prediction delivery.",
+          "Deployed forecasting models using AWS SageMaker, with automated retraining and forecast versioning.",
+          "Enabled inventory optimization, reduced overstocking, and supported strategic planning decisions.",
+          "Delivered a scalable and cost-efficient solution using Docker, FastAPI, and CI/CD workflows."
+        ],
+        "technologies": [
+          "Time-Series Forecasting",
+          "Machine Learning",
+          "XGBoost",
+          "AWS SageMaker",
+          "Docker",
+          "FastAPI",
+          "CI/CD"
+        ]
+      },
+
+      {
+        "name": "Kroolo – AI-Powered Productivity Tool",
+        "description": [
+          "Took ownership of end-to-end AI integration across the Kroolo productivity platform.",
+          "Implemented AI-driven project template generation including task suggestions, complete template regeneration, section summarization, and dynamic length adjustments.",
+          "Enabled AI-based document and goal generation to streamline planning workflows.",
+          "Integrated Amazon Bedrock and a custom knowledge base to support PDF-based Retrieval-Augmented Generation (RAG) within the workspace."
+        ],
+        "technologies": [
+          "Generative AI",
+          "LLMs",
+          "Amazon Bedrock",
+          "RAG",
+          "Knowledge Base"
+        ]
+      },
+
+      {
+        "name": "AI-Powered Image-Based Product Search with Google Vision API",
+        "description": [
+          "Developed an intelligent system leveraging Google Vision API for real-time image classification, object detection, and text extraction for product search from product catalog.",
+          "Automated metadata generation for product images, enabling faster search, tagging, and cataloging workflows.",
+          "Enhanced product discovery and operational efficiency through visual AI capabilities embedded into existing business platforms."
+        ],
+        "technologies": [
+          "Google Vision API",
+          "Computer Vision",
+          "Image Classification",
+          "Object Detection",
+          "OCR"
+        ]
+      },
+
+      {
+        "name": "Finanticx – AI-Driven Financial Intelligence Platform",
+        "description": [
+          "Built a platform to simplify personal and business finance using AI-powered insights and automation.",
+          "Integrated bank statement parsers, transaction categorization, and expense forecasting using machine learning.",
+          "Developed modules for credit score tracking, EMI management, and goal-based savings recommendations.",
+          "Enabled seamless user experience with secure backend APIs, responsive front-end, and cloud-native infrastructure."
+        ],
+        "technologies": [
+          "Artificial Intelligence",
+          "Machine Learning",
+          "Backend APIs",
+          "Responsive Frontend",
+          "Cloud Infrastructure"
+        ]
+      },
+
+      {
+        "name": "Surveillance Security Management Tool",
+        "description": [
+          "Developed a real-time surveillance platform using YOLOv8 and OCR to identify vehicle types, number plates, and behavior patterns.",
+          "Enabled event-based alerting for suspicious activities like loitering, repeated passes, or idle vehicles.",
+          "Integrated with live CCTV feeds and supported multi-location monitoring.",
+          "Optimized speed and accuracy with multi-threaded inference and GPU acceleration."
+        ],
+        "technologies": [
+          "YOLOv8",
+          "OCR",
+          "Computer Vision",
+          "CCTV",
+          "Multi-threaded Inference",
+          "GPU Acceleration"
+        ]
+      },
+
+      {
+        "name": "Emango – Education & Event Enablement Platform",
+        "description": [
+          "Built a unified platform for students, schools, colleges, and societies to engage in academic and extracurricular activities.",
+          "Enabled students to access assignments, quizzes, mock tests, and receive AI-generated performance reports.",
+          "Developed modules for schools and societies to organize and manage academic competitions, hackathons, and talent events.",
+          "Facilitated institutional discovery, allowing colleges to identify high-performing students for admissions and outreach based on event and quiz performance analytics."
+        ],
+        "technologies": [
+          "Full-Stack Development",
+          "Django",
+          "Rest APIs",
+          "Analytics",
+          "Education Technology"
+        ]
+      },
+
+      {
+        "name": "HTVMS – Heavy Vehicle Transport Management System",
+        "description": [
+          "Designed and developed a comprehensive end-to-end platform to streamline the manufacturing workflow of heavy vehicles for manufacturers.",
+          "Enabled real-time lead intake for the sales team through forms and offline visits, with automated routing for initial vehicle assessments.",
+          "Implemented bay-wise production management allowing isolated, conflict-free assembly of truck components, with daily progress logging per vehicle.",
+          "Integrated production-to-inventory communication for seamless component requisition and fulfillment, reducing downtime.",
+          "Automated vehicle testing workflow, where test approvals trigger consolidated reporting for accounts and final billing.",
+          "Streamlined post-payment vehicle release with automated gate pass generation and real-time synchronization with the security team.",
+          "Achieved complete digitalization of sales, production, inventory, testing, finance, and dispatch with real-time data flow and zero paperwork."
+        ],
+        "technologies": [
+          "Full-Stack Development",
+          "Workflow Automation",
+          "Real-Time Systems",
+          "Production Management",
+          "Inventory Management",
+          "Django"
+        ]
+      },
+
+      {
+        "name": "Nursing Station",
+        "description": [
+          "Developed a system to track patient requests, medication schedules, and nurse assignments.",
+          "Developed to provide treatment at the door."
+        ],
+        "technologies": [
+          "Full-Stack Development",
+          "Workflow Management",
+          "Real-Time Data"
+        ]
+      },
+
+      {
+        "name": "FitBuddy",
+        "description": [
+          "Built an AI platform to count user repetitions and detect exercise errors in real time using a mobile camera.",
+          "Implemented AI-generated reports, diet plans, and dashboards for clients and trainers."
+        ],
+        "technologies": [
+          "Artificial Intelligence",
+          "Computer Vision",
+          "Real-Time Inference",
+          "AI-Generated Reports"
+        ]
+      }
+    ],
+
+    "languages": [
+      {
+        "name": "English",
+        "level": "Professional"
+      },
+      {
+        "name": "Hindi",
+        "level": "Native"
+      }
+    ]
+  }
+}

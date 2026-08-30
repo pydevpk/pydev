@@ -1,50 +1,67 @@
 import nodemailer from "nodemailer";
 
+const clean = (v, max) => String(v ?? "").trim().slice(0, max);
+const isEmail = (v) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v);
+
+function json(body, status) {
+  return new Response(JSON.stringify(body), {
+    status,
+    headers: { "Content-Type": "application/json" },
+  });
+}
+
 export async function POST(req) {
+  let body;
   try {
-    const body = await req.json(); // parse incoming JSON
-    const { name, email, message } = body;
+    body = await req.json();
+  } catch {
+    return json({ message: "Invalid request body." }, 400);
+  }
 
-    // Example: validation
-    if (!name || !email || !message) {
-      return new Response(
-        JSON.stringify({ message: "All fields are required" }),
-        { status: 400 }
-      );
-    }
+  // Honeypot — bots fill hidden fields; humans don't.
+  if (clean(body.company, 100)) {
+    return json({ success: true, message: "Form submitted!" }, 200);
+  }
 
-    // Create transporter
+  const name = clean(body.name, 120);
+  const email = clean(body.email, 200);
+  const message = clean(body.message, 5000);
+
+  if (!name || !email || !message) {
+    return json({ message: "All fields are required." }, 400);
+  }
+  if (!isEmail(email)) {
+    return json({ message: "Please provide a valid email address." }, 400);
+  }
+  if (message.length < 10) {
+    return json({ message: "Message is too short." }, 400);
+  }
+
+  if (!process.env.GMAIL_USER || !process.env.GMAIL_PASS) {
+    console.error("contact: GMAIL_USER / GMAIL_PASS not configured");
+    return json(
+      { message: "Mail service is not configured. Please email directly." },
+      500
+    );
+  }
+
+  try {
     const transporter = nodemailer.createTransport({
       service: "gmail",
-      auth: {
-        user: process.env.GMAIL_USER,
-        pass: process.env.GMAIL_PASS,
-      },
+      auth: { user: process.env.GMAIL_USER, pass: process.env.GMAIL_PASS },
     });
 
-    // Email options
-    const mailOptions = {
+    await transporter.sendMail({
       from: process.env.GMAIL_USER,
-      to: process.env.GMAIL_USER, // send to yourself
-      subject: `New Contact from ${name}`,
-      text: `
-        Name: ${name}
-        Email: ${email}
-        Message: ${message}
-      `,
-    };
+      to: process.env.GMAIL_USER,
+      replyTo: email,
+      subject: `Portfolio contact — ${name}`,
+      text: `Name: ${name}\nEmail: ${email}\n\n${message}`,
+    });
 
-    // Send email
-    await transporter.sendMail(mailOptions);
-
-    return new Response(
-      JSON.stringify({ success: true, message: "Form submitted!" }),
-      { status: 200 }
-    );
+    return json({ success: true, message: "Form submitted!" }, 200);
   } catch (error) {
-    return new Response(
-      JSON.stringify({ message: "Something went wrong" }),
-      { status: 500 }
-    );
+    console.error("contact: send failed", error);
+    return json({ message: "Could not send your message right now." }, 500);
   }
 }

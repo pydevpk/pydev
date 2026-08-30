@@ -1,58 +1,73 @@
-"use client";
-
-import Image from "next/image";
-import ProfileImage from "../../../public/profile.jpeg"
-import PradeepLogo from "../../../public/Pradeep.png"
+import Link from "next/link";
+import { navLinks, profile } from "@/data/profile";
 import SocialLinks from "./SocialLinks";
+import Marquee from "./Marquee";
 
 export default function Footer() {
-    return (
-        <div className="border-left-main border-right-main max-w-4xl mx-auto p-5 lg:p-15 text-center">
-            {/* Profile Image */}
-            <Image
-                src={ProfileImage.src}
-                alt="Profile"
-                width={120}
-                height={120}
-                className="rounded-full mx-auto mb-4"
-            />
+  return (
+    <footer className="border-t border-hairline">
+      <Marquee
+        duration={28}
+        className="border-b border-hairline py-8 text-muted-dim"
+      >
+        {Array.from({ length: 6 }).map((_, i) => (
+          <span
+            key={i}
+            className="font-display text-5xl tracking-tight sm:text-7xl"
+          >
+            Let&rsquo;s build something
+            <span className="mx-8 text-accent">✦</span>
+          </span>
+        ))}
+      </Marquee>
 
-            {/* Name */}
-            {/* <h2 className="text-xl font-semibold text-gray-800">Pradeep K Yadav</h2> */}
-            <div>
-                <Image src={PradeepLogo.src} width={150} height={150} alt="Pradeep Logo" className="mx-auto"></Image>
+      <div className="mx-auto max-w-7xl px-5 py-14 sm:px-8">
+        <div className="flex flex-col justify-between gap-10 md:flex-row">
+          <div>
+            <p className="font-display text-2xl text-text">
+              Pradeep<span className="text-accent">.</span>
+            </p>
+            <p className="mt-3 max-w-xs text-sm text-muted">
+              {profile.title} — {profile.availability.toLowerCase()}.
+            </p>
+            <a
+              href={`mailto:${profile.email}`}
+              className="link-underline mt-4 inline-block text-sm text-text"
+            >
+              {profile.email}
+            </a>
+          </div>
+
+          <div className="flex gap-14">
+            <nav className="flex flex-col gap-2">
+              <span className="eyebrow mb-1">Sitemap</span>
+              {navLinks.map((l) => (
+                <Link
+                  key={l.href}
+                  href={l.href}
+                  className="text-sm text-muted hover:text-text"
+                >
+                  {l.label}
+                </Link>
+              ))}
+            </nav>
+            <div className="flex flex-col gap-3">
+              <span className="eyebrow mb-1">Elsewhere</span>
+              <SocialLinks />
             </div>
-
-            {/* Designation */}
-            <p className="text-gray-500 mb-4">Sr Full Stack Engineer | AI Engineer | Backend Specialist</p>
-
-            {/* Marquee */}
-            <marquee className="text-white-600 font-medium">
-                <div className="flex">
-                    <div className="flex items-center gap-2">
-                        <p className="text-6xl">Want A Call</p>
-                    </div>
-                    <div className="flex items-center gap-2 ml-3">
-                        <span className="w-6 h-6 rounded-full bg-gray-400" />
-                        <p className="text-6xl">Want A Call</p>
-                    </div>
-                    <div className="flex items-center gap-2 ml-3">
-                        <span className="w-6 h-6 rounded-full bg-gray-400" />
-                        <p className="text-6xl">Want A Call</p>
-                    </div>
-                    <div className="flex items-center gap-2 ml-3">
-                        <span className="w-6 h-6 rounded-full bg-gray-400" />
-                        <p className="text-6xl">Want A Call</p>
-                    </div>
-                    <div className="flex items-center gap-2 ml-3">
-                        <span className="w-6 h-6 rounded-full bg-gray-400" />
-                        <p className="text-6xl">Want A Call</p>
-                    </div>
-                </div>
-            </marquee>
-            <div className="mt-10">
-                <SocialLinks />
-            </div>
+          </div>
         </div>
-    );
+
+        <div className="mt-14 flex flex-col justify-between gap-3 border-t border-hairline pt-6 text-xs text-muted-dim sm:flex-row">
+          <p>
+            © {new Date().getFullYear()} {profile.name}. All rights reserved.
+          </p>
+          <p>Built with Love by <a href="https://pydev.online">pydev</a>.</p>
+          <a href="#top" className="hover:text-text">
+            Back to top ↑
+          </a>
+        </div>
+      </div>
+    </footer>
+  );
 }
